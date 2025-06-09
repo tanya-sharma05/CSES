@@ -1,3 +1,4 @@
+// Bit Strings
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -7,7 +8,7 @@ int main(){
     cin>>n;
     
     long long ans=1;
-    for(int i=0;i<n;i++){
+    for(int i=1;i<=n;i++){
         ans*=2;
         ans%=mod;
     }
