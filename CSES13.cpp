@@ -1,3 +1,4 @@
+// Gray Code
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -6,11 +7,12 @@ vector<string> solve(int n){
     
     vector<string> prev=solve(n-1);
     vector<string> ans;
-    
-    for(int i=0;i<prev.size();i++){
+
+    int size=prev.size();
+    for(int i=0;i<size;i++){
         ans.push_back("0"+prev[i]);
     }
-    for(int i=prev.size()-1;i>=0;i--){
+    for(int i=size-1;i>=0;i--){
         ans.push_back("1"+prev[i]);
     }
     
