@@ -1,3 +1,4 @@
+// Palindrome Reorder
 #include<bits/stdc++.h>
 using namespace std;
  
@@ -6,15 +7,15 @@ int main(){
     cin>>s;
     unordered_map<char,int> mp;
     for(int i=0;i<s.size();i++) mp[s[i]]++;
-    int cnt=0;
+    int oddCnt=0;
     char ch;
     for(auto i:mp){
         if(i.second&1){
-            cnt++;
+            oddCnt++;
             ch=i.first;
         }
     }
-    if(cnt>1){
+    if(oddCnt>1){
         cout<<"NO SOLUTION"<<endl;
     }
     else{
