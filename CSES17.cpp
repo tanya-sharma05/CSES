@@ -1,3 +1,5 @@
+// Chessboard and Queens
+// N Queens (1 & 2)
 #include<bits/stdc++.h>
 using namespace std;
 
